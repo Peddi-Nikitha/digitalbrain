@@ -1,0 +1,83 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "ddfsfdfdf",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"sddfsadfdfdf",
+  "password":"richard_567"
+}
+
+
+
+###
+
+POST http://localhost:3000/todos/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNkZGZzYWRmZGZkZiIsImlhdCI6MTY4NDIxNTM4Mn0.DlAXy8-s4OIkCUeu3jzpQqxCLR_uXgglOuJ8tu3BVR4
+Content-Type: application/json
+
+{
+ "id": 2,
+ "todo": "Finalize event theme",
+ "status": "PENDING",
+ "dueDate": "2020-02-22"
+}
+
+
+
+
+###
+
+GET http://localhost:3000/todos/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNkZGZzYWRmZGZkZiIsImlhdCI6MTY4NDIxNTM4Mn0.DlAXy8-s4OIkCUeu3jzpQqxCLR_uXgglOuJ8tu3BVR4
+
+
+
+
+###
+GET http://localhost:3000/todos/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNkZGZzYWRmZGZkZiIsImlhdCI6MTY4NDIxNTM4Mn0.DlAXy8-s4OIkCUeu3jzpQqxCLR_uXgglOuJ8tu3BVR4
+
+
+
+###
+PUT http://localhost:3000/todos/5/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNkZGZzYWRmZGZkZiIsImlhdCI6MTY4NDIxNTM4Mn0.DlAXy8-s4OIkCUeu3jzpQqxCLR_uXgglOuJ8tu3BVR4
+Content-Type: application/json
+
+{ "status": "DONE" }
+
+
+
+
+###
+DELETE http://localhost:3000/todos/5/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNkZGZzYWRmZGZkZiIsImlhdCI6MTY4NDIxNTM4Mn0.DlAXy8-s4OIkCUeu3jzpQqxCLR_uXgglOuJ8tu3BVR4
+
+
+
+
+
+
+
+
+###
+GET http://localhost:3000/agenda/?date=2020-9-22
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNkZGZzYWRmZGZkZiIsImlhdCI6MTY4NDIxNTM4Mn0.DlAXy8-s4OIkCUeu3jzpQqxCLR_uXgglOuJ8tu3BVR4
+
+
+
+
+
