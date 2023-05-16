@@ -5,10 +5,13 @@ const path = require("path");
 const format = require("date-fns/format");
 const isValid = require("date-fns/isValid");
 
+const cors = require("cors");
+
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 let app = express();
+app.use(cors());
 app.use(express.json());
 
 const dbPath = path.join(__dirname, "todoApplication.db");
